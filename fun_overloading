@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class shape
+{
+	public:
+		void area(int);
+		void area(int,int);
+		void area(double);
+};
+void shape::area(int a)
+{
+	cout<<a*a<<endl;
+}
+void shape::area(int l,int b)
+{
+	cout<<l*b<<endl;
+}
+void shape::area(double r){
+	cout<<3.14*r*r<<endl;
+}
+int main(){
+	shape s;
+	s.area(10);
+	s.area(2.5);
+	s.area(10,20);
+	return 0;
+}
